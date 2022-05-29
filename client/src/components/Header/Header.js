@@ -24,11 +24,11 @@ const Header = () => {
     <div className="header">
       <div className="left__header">
         <Link to="/">
-          <img
-            src="https://lms.bup.edu.bd/pluginfile.php/1/theme_edumy/headerlogo2/1618037325/bup-icon.png"
+          <img className="logo" 
+            src="./logo.png"
             alt=""
           />
-          <h4>LMS</h4>
+          <h4>BrilliantPro</h4>
         </Link>
       </div>
       <div
