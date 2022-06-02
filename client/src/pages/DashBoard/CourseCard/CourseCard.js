@@ -18,7 +18,7 @@ const CourseCard = ({title,name,id,img}) => {
             
             
             <div className={Styles.course__content}>
-                <span>Jan-Jun 2021</span>
+                <span>2022</span>
                 <h5>{name}</h5>
                 <h5>{title}</h5>
                 <Button color='primary' variant="contained" >Published</Button><br/>

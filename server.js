@@ -13,8 +13,10 @@ app.use("/uploads", express.static("uploads"));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors());
 
+
+app.use(express.json());
+app.use(cors());
 //Routes
 
 app.use("/auth", require("./routes/authRoute"));
@@ -22,6 +24,7 @@ app.use("/", require("./routes/courseRoute"));
 app.use("/users", require("./routes/userRoute"));
 app.use("/profile", require("./routes/profileRoute"));
 app.use("/enroll-course", require("./routes/enrollRoute"));
+app.use("/get-courses", require("./routes/enrollRoute"));
 
 //Deploy:
 

@@ -8,7 +8,7 @@ import NoticeToggle from "./NoticeToggle/NoticeToggle";
 const CourseInfo = () => {
   return (
     <div>
-      <CommonHeader title="ANALYSIS AND DESIGN OF ALGORITHM" />
+      <CommonHeader title="PROGRAMMING FUNDAMENTALS" />
       <Container className="my-5">
         <Paper className="px-5 py-3">
           <div className="">

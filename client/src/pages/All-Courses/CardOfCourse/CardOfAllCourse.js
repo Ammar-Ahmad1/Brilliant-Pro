@@ -11,25 +11,34 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchCourseInfo } from "../../../Redux/course/courseAction";
 import { Col, Container, Row } from "react-bootstrap";
 import Spinner_comp from "../../../components/Spinner/Spinner_comp";
-
+//const enroll__course__controller= require('../../../../../controllers/enrollController');
+//const CourseEnrollModel=require('../../../../../model/CourseEnrollModel');
+//const enroll__course__controller = require('./enrollController')
+// import { CourseEnrollModel } from "./CourseEnrollModel";
+// var express = require("express");
+// var app = express();
+//const enroll__course__controller =require('./enrollController');
 const useStyles = makeStyles({
   media: {
     height: 140,
   },
 });
 const CardOfAllCourse = () => {
+  const [loading, setLoading] = useState(false);
+
   const classes = useStyles();
   const [enroll,setEnroll]=useState(false)
-
+  const {user} = useSelector((state) => state.auth);
   const { courseInfo } = useSelector((state) => state.course);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCourseInfo());
   }, []);
-  const enrollHandler=(id)=>{
-   
 
+  const enrollHandler=()=>{
+    //enroll__course__controller(user._id,courseInfo._id);
   }
+
 
   return (
     <Container>
@@ -59,7 +68,7 @@ const CardOfAllCourse = () => {
                     </CardContent>
                   </CardActionArea>
                   <CardActionArea className='p-2'>
-                  <Button onClick={()=>enrollHandler(val._id)} variant='contained' color="primary" >Enroll</Button>
+                  <Button onClick={enrollHandler} variant='contained' color="primary" >Enroll</Button>
                     
                    
 

@@ -56,11 +56,11 @@ const Profile = () => {
                 value1="Browser sessions"
                 value2="Grades overview"
               />
-              <ToggleProfileInfo
+              {/* <ToggleProfileInfo
                 title="Mobile app"
                 value1="This site has mobile app access enabled.
             Download the mobile app."
-              />
+              /> */}
             </Paper>
           </Col>
           <Col md={4} className="">
@@ -88,7 +88,7 @@ const Profile = () => {
               </Typography>
               <Typography variant="body1">English</Typography>
               <br />
-              <Typography
+              {/* <Typography
                 className="my-2"
                 style={{ color: "gray" }}
                 variant="body2"
@@ -97,8 +97,8 @@ const Profile = () => {
               </Typography>
               <Typography variant="body1">
                 Sunday, 14 February 2021, 8:44 AM
-              </Typography>
-              <br />
+              </Typography> */}
+              {/* <br />
               <Typography
                 className="my-2"
                 style={{ color: "gray" }}
@@ -109,7 +109,7 @@ const Profile = () => {
               <Typography variant="body1">
                 Wednesday, 5 May 2021, 2:44 PM
               </Typography>
-              <br />
+              <br /> */}
               <Typography
                 className="my-2"
                 style={{ color: "gray" }}
@@ -135,7 +135,7 @@ const Profile = () => {
                 >
                   Courses I'm taking
                 </Typography>
-                <Typography variant="body1">9</Typography>
+                <Typography variant="body1">0</Typography>
               </Paper>
                 
               }

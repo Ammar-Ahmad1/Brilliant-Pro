@@ -52,8 +52,8 @@ const Dashboard = () => {
       <div className="left__sidebar__dashboard">
         <Sidebar Icon={DashboardIcon} title="Dashboard" link="/" />
         <Sidebar Icon={PersonIcon} title="Profile" link="/profile" />
-        <Sidebar Icon={TouchAppIcon} title="Grades" link="/grades" />
-        <Sidebar Icon={MessageIcon} title="Messages" link="/messages" />
+        {/* <Sidebar Icon={TouchAppIcon} title="Grades" link="/grades" /> */}
+        {/* <Sidebar Icon={MessageIcon} title="Messages" link="/messages" /> */}
         <Sidebar
           Icon={SettingsApplicationsIcon}
           title="Preferences"
@@ -89,11 +89,11 @@ const Dashboard = () => {
             title="Settings"
             Icon={SettingsApplicationsIcon}
           />
-          <Body4Card
+          {/* <Body4Card
             shortTitle="Performance"
             title="Grades"
             Icon={TouchAppIcon}
-          />
+          /> */}
         </div>
 
         <Container fluid className="my-5">

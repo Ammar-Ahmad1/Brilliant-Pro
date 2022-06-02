@@ -68,9 +68,9 @@ const Header = () => {
               user.role==="Student" &&<><li>
               <NavLink onClick={toggleClose} to="/">Dashboard</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink onClick={toggleClose} to="/ucam">UCAM</NavLink>
-            </li>
+            </li> */}
 
             <li>
               <NavLink onClick={toggleClose} to="/library">LIBRARY</NavLink>

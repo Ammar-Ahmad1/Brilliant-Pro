@@ -28,6 +28,13 @@
   "proxy": {
     "/auth/register": {
       "target": "localhost:5000"
+    },
+    "/enroll-course": {
+      "target": "localhost:5000"
+    }
+    ,
+    "/get-courses": {
+      "target": "localhost:5000"
     }
   }
 }
